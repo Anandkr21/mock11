@@ -23,7 +23,7 @@ postRouter.post('/post', async (req, res) => {
 
 
 // Retrive API 
-postRouter.post('/destination/:id', async (req, res) => {
+postRouter.get('/', async (req, res) => {
     try {
         const id = req.query.id
         const destination = req.query.destination
